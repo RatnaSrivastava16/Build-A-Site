@@ -79,10 +79,10 @@ A brief description of your website goes here. For example:
 ## Screenshots
 
 ![Screenshot 1](https://github.com/RatnaSrivastava16/Build-A-Site/blob/master/home.jpg)
-*Caption for the screenshot.*
+*Home Page*
 
-![Screenshot 2](path/to/screenshot2.png)
-*Caption for the screenshot.*
+![Screenshot 2](https://github.com/RatnaSrivastava16/Build-A-Site/blob/master/pomodoro.jpg)
+*Pomodoro Timer*
 
 ---
 
