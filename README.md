@@ -56,8 +56,23 @@ A brief description of your website goes here. For example:
 or just double-click the file in your file explorer.
 ## Usage
 
-1. Describe how to use your website, e.g., "Navigate to the home page, log in, and explore various features like [feature examples]."
-2. Provide any credentials if applicable for testing (e.g., demo accounts).
+1. Navigate to the Home Page
+ - Upon opening the website, you will land on the home page where you can begin tracking your productivity.
+2. Sign Up / Log In
+   - Create an account or log in using your credentials to save your progress, goals, and tracked tasks.
+3. Set Your Daily Goals
+   - On the dashboard, you can set your daily goals and define tasks for the day.
+4. Track Tasks
+   - Add tasks to your to-do list, including a description, deadline, and priority level.
+5. Use the Pomodoro Timer
+   - Start the Pomodoro timer (usually a 25-minute work session followed by a 5-minute break).
+   - Use the timer to stay focused on individual tasks, ensuring maximum productivity in short bursts.
+6. Measure Productivity
+   - rack your progress with visual charts and graphs that show completed tasks, time spent on tasks, and productivity trends.
+7. Review Task History
+   - Look at your past tasks and their completion status to analyze your performance over time.
+8. Log Out
+   - Log out after finishing your session to secure your account and privacy.
 
 ---
 
