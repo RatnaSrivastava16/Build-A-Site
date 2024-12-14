@@ -21,30 +21,39 @@ A brief description of your website goes here. For example:
 
 ## Features
 
-- [Feature 1] (e.g., Responsive design)
-- [Feature 2] (e.g., User authentication)
-- [Feature 3] (e.g., Dynamic content rendering)
-- [Feature 4] (e.g., SEO-friendly structure)
+- [Responsive Design]
+- [User Authentication]
+- [Pomodoro timer]
+- [Task lists]
 
 ## Technologies Used
 
-- **Frontend**: [HTML, CSS, JavaScript, React, Vue.js, Angular, or other frameworks]
-- **Backend**: [Node.js, Django, Flask, Ruby on Rails, ASP.NET, or others]
-- **Database**: [MongoDB, MySQL, PostgreSQL, Firebase, or others]
-- **Styling**: [Tailwind CSS, Bootstrap, SCSS, Material UI, or others]
-- **APIs**: [REST, GraphQL, or custom APIs]
-- **Hosting**: [Vercel, Netlify, Heroku, AWS, Azure, or other platforms]
+- **Frontend**: [HTML, CSS, JavaScript, React]
+- **Backend**: [Node.js]
+- **Database**: [MongoDB]
+- **Styling**: [CSS]
 
 ---
 
 ## Installation
 
-### Prerequisites
-[Add the prerequisites to run the website here]
-
 ### Steps to run the project
-[Add the instructions to run the website here]
+1. Clone the repository:
 
+   git clone https://github.com/RatnaSrivastava16/Build-A-Site.git
+
+3. Navigate to the Project Folder:
+
+   cd Build-A-Site
+
+4. Install Dependencies:
+   npm install
+
+5. Start the Development Server
+
+   npm start
+
+or just double-click the file in your file explorer.
 ## Usage
 
 1. Describe how to use your website, e.g., "Navigate to the home page, log in, and explore various features like [feature examples]."
