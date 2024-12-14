@@ -47,13 +47,13 @@ A brief description of your website goes here. For example:
    cd Build-A-Site
 
 4. Install Dependencies:
+   
    npm install
 
-5. Start the Development Server
+6. Start the Development Server
 
    npm start
 
-or just double-click the file in your file explorer.
 ## Usage
 
 1. Navigate to the Home Page
@@ -68,7 +68,7 @@ or just double-click the file in your file explorer.
    - Start the Pomodoro timer (usually a 25-minute work session followed by a 5-minute break).
    - Use the timer to stay focused on individual tasks, ensuring maximum productivity in short bursts.
 6. Measure Productivity
-   - rack your progress with visual charts and graphs that show completed tasks, time spent on tasks, and productivity trends.
+   - Track your progress with visual charts and graphs that show completed tasks, time spent on tasks, and productivity trends.
 7. Review Task History
    - Look at your past tasks and their completion status to analyze your performance over time.
 8. Log Out
