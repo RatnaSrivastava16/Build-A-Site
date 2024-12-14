@@ -78,7 +78,7 @@ A brief description of your website goes here. For example:
 
 ## Screenshots
 
-![Screenshot 1]([path/to/screenshot1.png](https://github.com/RatnaSrivastava16/Build-A-Site/blob/master/home.jpg))
+![Screenshot 1](https://github.com/RatnaSrivastava16/Build-A-Site/blob/master/home.jpg)
 *Caption for the screenshot.*
 
 ![Screenshot 2](path/to/screenshot2.png)
