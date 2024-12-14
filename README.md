@@ -1,10 +1,9 @@
 ![Build-A-Site](https://i.imgur.com/nZPQ9If.png)
 
-# Website Name (Team Name)
+# Prodify (Quantum Coders)
 
-A brief description of your website goes here. For example:
 
-> "A modern, responsive website built for [purpose/target audience]. This project demonstrates best practices in web development using [technologies/frameworks used]."
+> "The Productivity Tracker Website is a web-based application designed to enhance productivity by enabling users to efficiently plan, track, and analyze their daily activities. The platform focuses on goal-setting, activity tracking, and performance measurement, offering tools that promote consistency, time management, and focus. It combines task management with productivity-enhancing features like a Pomodoro timer and analytical insights to help users stay motivated and achieve their goals."
 
 ---
 
