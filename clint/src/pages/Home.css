@@ -1,0 +1,11 @@
+
+*{
+    background-color: antiquewhite;
+}
+
+.nav{
+    background-color: aqua;
+    height:6vh;
+    width:100%;
+    display: flex;
+}
