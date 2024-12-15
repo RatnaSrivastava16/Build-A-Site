@@ -1,5 +1,11 @@
-.image {
-    max-width: 300px;
-    max-height: 100px;
-    
+
+*{
+    background-color: antiquewhite;
+}
+
+.nav{
+    background-color: aqua;
+    height:6vh;
+    width:100%;
+    display: flex;
 }

@@ -10,9 +10,8 @@ function Home() {
     return (
       <div className="all">
         <div className="nav">
-            <h5>🕒 Track</h5>
-            <span className="material-symbols-outlined">menu</span>
-
+            <h5>🕒 Prodify</h5>
+            {/* <span className="material-symbols-outlined">menu</span> */}
         </div>
         <div className="content">
             <div className="text">
@@ -21,8 +20,8 @@ function Home() {
                 </h1>
                 <button className="start" onClick={handleStartClick}>START NOW</button>
             </div>
-            <div className="image">
-                <img src={hourGlass} alt="Hourglass Timer Image" />
+            <div className="div-image">
+                <img className="main-image" src={hourGlass} alt="Hourglass Timer Image" />
             </div>
         </div>
 
