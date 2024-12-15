@@ -1,0 +1,107 @@
+/* Register.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2F85A3; /* Dark Sky Blue */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* White text color for contrast */
+}
+
+/* Main container for login section */
+.login-main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    opacity: 0.9; /* Slight transparency for the form */
+}
+
+/* Heading style */
+.login-main h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2F85A3; /* Matching dark sky blue for the heading */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input field styling */
+input[type="email"], input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Focus state for inputs */
+input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #2F85A3; /* Highlight on focus with dark sky blue */
+}
+
+/* Button styling */
+.logbtn {
+    padding: 12px;
+    border: none;
+    background-color: #2F85A3; /* Dark Sky Blue */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button hover effect */
+.logbtn:hover {
+    background-color: #23942e; /* Slightly darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .login-main {
+        padding: 20px;
+    }
+    .login-main h3 {
+        font-size: 20px;
+    }
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .toggle-form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .toggle-link {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .toggle-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css"
 import { useNavigate } from "react-router-dom";
-import hourGlass from "../assets/hourglass.jpg"
+import hourGlass from "../assets/hour.jpg"
 function Home() {
     const navigate = useNavigate();
     const handleStartClick = () => {
@@ -10,9 +10,9 @@ function Home() {
     return (
       <div className="all">
         <div className="nav">
-            <h5>🕒 Prodify</h5>
-            {/* <span className="material-symbols-outlined">menu</span> */}
+            <h5>Track</h5>
         </div>
+        <div className="maincontent">
         <div className="content">
             <div className="text">
                 <h1>
@@ -20,11 +20,11 @@ function Home() {
                 </h1>
                 <button className="start" onClick={handleStartClick}>START NOW</button>
             </div>
-            <div className="div-image">
-                <img className="main-image" src={hourGlass} alt="Hourglass Timer Image" />
+                <div className="image">
+                    <img className="img" src={hourGlass} alt="Hourglass Timer Image" />
+                </div>
             </div>
         </div>
-
       </div>
     );
 }

@@ -3,7 +3,7 @@ import "./Navbar.css"
 const Navbar = ({ onNavClick }) => {
     return (
       <nav style={styles.navbar}>
-        <h1 style={styles.logo}>Prodify</h1>
+        <h1 style={styles.logo}>🕒 Prodify</h1>
         <ul style={styles.navItems}>
             <li onClick={() => onNavClick('Home')} style={styles.navItem}>
             Home

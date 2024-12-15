@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #d7efff, #f8e2ff);
+  }
+  
+  /* Main Pomodoro timer container */
+  .pomodoro-timer {
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header title styling */
+  .pomodoro-timer h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button group for breaks */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .button-group button {
+    background: #e6f7ff;
+    color: #333333;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background: #d0e8ff;
+    transform: scale(1.1);
+  }
+  
+  /* Timer display */
+  .timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin: 20px 0;
+  }
+  
+  /* Control buttons for Start/Restart */
+  .control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .control-buttons button {
+    background: #ffffff;
+    color: #333333;
+    border: 2px solid #d0e8ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .control-buttons button:hover {
+    background: #f0f8ff;
+    transform: scale(1.1);
+  }

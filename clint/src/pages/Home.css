@@ -1,11 +1,108 @@
-
-*{
-    background-color: antiquewhite;
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #39628b, #6bc4d2);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.nav{
-    background-color: aqua;
-    height:6vh;
-    width:100%;
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
     display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav h5 {
+    font-size: 1.6rem;
+    color:white;
+    font-family:cursive;
+    display: flex;
+    align-items: center;
+}
+
+.nav h5::before {
+    content: "🕒";
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.maincontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1); /* Subtle background for content */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 1.4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.text h1 span {
+    color: #c56eac; /* Highlight color for "PRODUCTIVE LIFE" */
+}
+
+.start {
+    font-family:cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background:#c56eac ; /* Lighter teal button */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(79, 209, 197, 0.5);
+}
+
+.start:hover {
+    background:white ;
+    color: #c56eac; /* Slightly darker teal on hover */
+    box-shadow: 0 6px 15px rgba(62, 148, 161, 0.6);
+    transform: scale(1.05);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
