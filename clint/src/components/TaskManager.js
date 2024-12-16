@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./Task.css"
 const TaskManager = () => {
   const [task, setTask] = useState("");
   const [taskDate, setTaskDate] = useState("");

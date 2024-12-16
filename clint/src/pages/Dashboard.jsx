@@ -22,13 +22,13 @@ const Dashboard = () => {
           {activeSection === 'Manage' && <TaskManager />}
           {activeSection === 'Timer' && <Timer />}
           {activeSection === 'Progress' && <h2>Progress Details Here</h2>}
-          {activeSection === 'Home' && <div>
+          {activeSection === 'Home' && <div className="content1">
             <h1>BUILD A <span>PRODUCTIVE LIFE</span> WITH US </h1>
              <div className="div-image">
                             <img className="main-image" src={HourGlass} alt="Hourglass Timer" />
                             </div>
                         </div>}
-        {activeSection === '' && <div>
+        {activeSection === '' && <div className="content2">
             <h1>BUILD A <span>PRODUCTIVE LIFE</span> WITH US </h1>
              <div className="image">
                                  <img className="img" src={HourGlass} alt="Hourglass Timer Image" />

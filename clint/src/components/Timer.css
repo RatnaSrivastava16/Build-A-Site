@@ -15,6 +15,9 @@ body {
     border-radius: 15px;
     padding: 30px;
     width: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2c7ff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   }
   

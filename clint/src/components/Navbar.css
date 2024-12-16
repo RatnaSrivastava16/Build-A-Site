@@ -1,13 +1,12 @@
 /* General Navbar Styling */
 .navbar {
-    margin: 0;
+    margin-top: -13.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
     background-color: #282c34; /* Navbar Background */
     color: #ffffff; /* Text Color */
-    position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for a more stylish look */
     transition: all 0.3s ease; /* Smooth transition for changes */
   }
@@ -57,6 +56,9 @@
   
   /* Mobile View - When screen size is small, hide nav items and show hamburger */
   @media (max-width: 768px) {
+    .navbar {
+        margin-top: -11.4rem;
+    }
     .nav-items {
       display: none; /* Hide nav items on small screens */
       flex-direction: column;
