@@ -1,0 +1,119 @@
+/* General Navbar Styling */
+.navbar {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: #282c34; /* Navbar Background */
+    color: #ffffff; /* Text Color */
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for a more stylish look */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+  }
+
+  /* Logo Styling */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: auto; /* Ensures logo is left-aligned */
+    color: #6ac3cb; /* Attractive color for logo */
+    transition: color 0.3s ease; /* Transition for logo hover effect */
+  }
+  
+  /* Navigation Items */
+  .nav-items {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease; /* Smooth slide effect for mobile */
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffffff; /* Text Color */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #6ac3cb; /* Hover effect */
+  }
+  
+  /* Hamburger Menu (Three Line Icon) */
+  .hamburger-menu {
+    display: none; /* Hide the hamburger by default */
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  /* Show hamburger menu on smaller screens */
+  .hamburger-menu.active {
+    display: block; /* Show hamburger when active */
+  }
+  
+  /* Mobile View - When screen size is small, hide nav items and show hamburger */
+  @media (max-width: 768px) {
+    .nav-items {
+      display: none; /* Hide nav items on small screens */
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Position under navbar */
+      right: 2rem;
+      background-color: #282c34;
+      border-radius: 5px;
+      width: 200px;
+      padding: 1rem 0;
+    }
+  
+    .nav-items.active {
+      display: flex; /* Show nav items when the hamburger is clicked */
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show hamburger on small screens */
+    }
+  
+    .logout-menu {
+      right: 0;
+      left: auto;
+    }
+  }
+  
+  /* Logout Menu */
+  .logout-menu {
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 2rem;
+    background-color: #333; /* Menu Background */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Menu Shadow */
+  }
+  
+  /* Logout Button Styling */
+  .logout-button {
+    background-color: #c56eac; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #b25f97; /* Hover effect for button */
+  }
+  
+  /* Attractive Hover Effect for Navbar Logo */
+  .navbar:hover .logo {
+    color: #ffffff; /* Logo color change on hover */
+  }
+  

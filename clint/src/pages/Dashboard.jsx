@@ -30,10 +30,10 @@ const Dashboard = () => {
                         </div>}
         {activeSection === '' && <div>
             <h1>BUILD A <span>PRODUCTIVE LIFE</span> WITH US </h1>
-             <div className="div-image">
-                            <img className="main-image" src={HourGlass} alt="Hourglass Timer Image" />
-                            </div>
-                        </div>}
+             <div className="image">
+                                 <img className="img" src={HourGlass} alt="Hourglass Timer Image" />
+                             </div>
+                             </div>}
         </div>
       </div>
     );

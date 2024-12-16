@@ -1,53 +1,67 @@
-import React from "react";
-import "./Navbar.css"
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Navbar.css";
+
 const Navbar = ({ onNavClick }) => {
-    return (
-      <nav style={styles.navbar}>
-        <h1 style={styles.logo}>🕒 Prodify</h1>
-        <ul style={styles.navItems}>
-            <li onClick={() => onNavClick('Home')} style={styles.navItem}>
-            Home
-          </li>
-          <li onClick={() => onNavClick('Timer')} style={styles.navItem}>
-            Timer
-          </li>
-          <li onClick={() => onNavClick('Manage')} style={styles.navItem}>
-            Manage
-          </li>
-          <li onClick={() => onNavClick('Progress')} style={styles.navItem}>
-            Progress
-          </li>
-          <li onClick={() => onNavClick('User')} style={styles.navItem}>
+  const [showLogout, setShowLogout] = useState(false); // State to toggle logout option visibility
+  const [menuActive, setMenuActive] = useState(false); // State for hamburger menu
+  const navigate = useNavigate(); // Hook to navigate the user
+
+  const handleLogout = () => {
+    // Remove auth token from localStorage
+    localStorage.removeItem("authToken");
+    setShowLogout(false); // Hide logout option
+    navigate("/"); // Redirect to Home page
+  };
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive); // Toggle the menu visibility
+  };
+
+  const handleNavItemClick = (section) => {
+    onNavClick(section); // Call the parent function to change active section
+    setMenuActive(false); // Close the menu after a selection
+  };
+
+  return (
+    <nav className="navbar">
+      <h1 className="logo">🕒 Prodify</h1>
+      <ul className={`nav-items ${menuActive ? "active" : ""}`}>
+        <li onClick={() => handleNavItemClick("Home")} className="nav-item">
+          Home
+        </li>
+        <li onClick={() => handleNavItemClick("Timer")} className="nav-item">
+          Timer
+        </li>
+        <li onClick={() => handleNavItemClick("Manage")} className="nav-item">
+          Manage
+        </li>
+        <li onClick={() => handleNavItemClick("Progress")} className="nav-item">
+          Progress
+        </li>
+        <li
+          onClick={() => setShowLogout(!showLogout)} // Toggle logout menu visibility
+          className="nav-item"
+        >
           <span className="material-symbols-outlined">person</span>
-          </li>
-        </ul>
-      </nav>
-    );
-  };
+        </li>
+      </ul>
 
-  const styles = {
-    navbar: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '1rem 2rem',
-      backgroundColor: '#282c34',
-      color: '#ffffff',
-    },
-    logo: {
-      fontSize: '1.5rem',
-    },
-    navItems: {
-      listStyle: 'none',
-      display: 'flex',
-      gap: '2rem',
-    },
-    navItem: {
-      cursor: 'pointer',
-      fontSize: '1.2rem',
-      transition: 'color 0.2s',
-    },
-  };
-  
+      {/* Hamburger Icon (Three Line Menu) */}
+      <div className={`hamburger-menu ${menuActive ? "active" : ""}`} onClick={toggleMenu}>
+        ☰
+      </div>
 
-export default Navbar
+      {/* Conditionally render Logout option */}
+      {showLogout && (
+        <div className="logout-menu">
+          <button onClick={handleLogout} className="logout-button">
+            Logout
+          </button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
